@@ -1,0 +1,25 @@
+### SENSORS ###
+- platform: yr
+  monitored_conditions:
+     - temperature
+     - symbol
+     - precipitation
+     - windSpeed
+     - pressure
+     - windDirection
+     - humidity
+     - fog
+     - cloudiness
+     - lowClouds
+     - mediumClouds
+     - highClouds
+     - dewpointTemperature
+
+### STEAM ###
+- platform: steam_online
+  api_key: _REACTED_
+  accounts:
+     - _REACTED_
+     - _REACTED_
+     - _REACTED_
+     - _REACTED_

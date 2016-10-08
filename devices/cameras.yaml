@@ -1,0 +1,5 @@
+### CAMERAS ###
+
+- platform: generic
+  still_image_url: http://www.ohv.oslo.no/filestore/webcam/vippetangen.jpg
+  name: oslo

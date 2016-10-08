@@ -1,0 +1,5 @@
+# xBian
+- platform: kodi
+  url: _REDACTED_
+  name: xBian
+  turn_off_action: hibernate

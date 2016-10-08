@@ -1,0 +1,5 @@
+# hue
+  platform: hue
+  host: _REDACTED_
+  allow_unreachable: true
+  filename: phue.conf
