@@ -1,0 +1,144 @@
+default_view:
+  view: yes
+  entities:
+    - group.cameras
+    - group.weather
+
+### The media-tab ###
+media:
+  name: media
+  view: yes
+  entities:
+     - group.devices
+
+### The lights-tab ###
+lights:
+  name: lights
+  view: yes
+  entities:
+    - group.all_lights
+    - group.hallway_lights
+    - group.hallway_scenes
+    - group.kitchen_lights
+    - group.kitchen_scenes
+    - group.bedroom_lights
+    - group.bedroom_scenes
+
+### The scenes-tab ###
+scenes:
+  name: Scenes
+  view: yes
+  entities:
+     - group.global
+
+### The web-tab ###
+web:
+  name: weblinks
+  view: yes
+  entities:
+    - weblink.router
+    - weblink.webcam
+    - weblink.xBian
+
+### The steam-tab ###
+steam:
+  name: Steam
+  view: yes
+  entities:
+    - group.steamuser1
+    - group.steamuser2
+    - group.steamuser3
+    - group.steamuser4
+
+Cameras:
+    - camera.oslo
+
+Steamuser1:
+    - sensor.steam_XXXXXXXXXXXXXXXXX
+
+Steamuser2:
+    - sensor.steam_XXXXXXXXXXXXXXXXX
+
+Steamuser3:
+    - sensor.steam_XXXXXXXXXXXXXXXXX
+
+Steamuser4:
+    - sensor.steam_XXXXXXXXXXXXXXXXX
+
+
+Hallway Scenes:
+    - scene.hallway_normal
+    - scene.hallway_dim
+    - scene.hallway_off
+    - scene.hallway_party
+
+Kitchen Scenes:
+    - scene.kitchen_normal
+    - scene.kitchen_dim
+    - scene.kitchen_off
+    - scene.kitchen_party
+
+Bedroom Scenes:
+    - scene.bedroom_normal
+    - scene.bedroom_dim
+    - scene.bedroom_off
+    - scene.bedroom_party
+
+Global:
+    - scene.all_party
+    - scene.all_on
+    - scene.all_off
+    - scene.hallway_party
+    - scene.kitchen_party
+    - scene.hallway_normal
+    - scene.hallway_dim
+    - scene.hallway_off
+    - scene.kitchen_normal
+    - scene.kitchen_dim
+    - scene.kitchen_off
+    - scene.bedroom_normal
+    - scene.bedroom_dim
+    - scene.bedroom_off
+    - scene.bedroom_party
+    - scene.xbian_paused
+    - scene.xbian_playing
+    - scene.steam_playing
+    - scene.steam_paused
+
+All Lights:
+    - group.kitchen_lights
+    - group.hallway_lights
+    - group.bedroom_lights
+ 
+Kitchen Lights:
+    - light.hue_color_spot_1
+    - light.hue_color_spot_2
+    - light.hue_color_spot_3
+
+Hallway Lights:
+    - light.hue_color_spot_4
+    - light.hue_color_spot_5
+    - light.hue_color_spot_6
+
+Bedroom Lights:
+    - light.nattbordslampe
+
+Devices:
+    - media_player.xBian
+    - media_player.chromecasttv
+
+Weather:
+   - sun.sun
+   - sensor.yr_cloudiness
+   - sensor.yr_condition
+   - sensor.yr_dewpoint_temperature
+   - sensor.yr_fog
+   - sensor.yr_high_clouds
+   - sensor.yr_humidity
+   - sensor.yr_low_clouds
+   - sensor.yr_medium_clouds
+   - sensor.yr_pressure
+   - sensor.yr_symbol
+   - sensor.yr_temperature
+   - sensor.yr_wind_direction
+   - sensor.yr_wind_speed

@@ -1,0 +1,54 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: XX.XXXX
+  longitude: XX.XXXX
+  elevation: XX
+  # unit system metric=celcius, meters etc.
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/*
+
+# Logging
+logger:
+  default: error
+# Recorder
+# The recorder component is storing details in the local database which then are handled by the history component.
+# Configuration variables:
+# purge_days (Optional): Delete events and states older than x days.
+recorder:
+  purge_days: 14
+
+# Discover some devices automatically
+discovery:
+
+# Track the sun
+sun:
+
+# View all events in a logbook
+logbook:
+
+# Checks for available updates
+updater:
+
+# Allows you to issue voice commands from the frontend
+conversation:
+
+# Enables the frontend
+frontend:
+
+# Enables support for tracking state changes over time.
+history:
+
+## INCLUDE ##
+## Devices #
+automation: !include automation.yaml
+sensor: !include devices/sensors.yaml
+media_player: !include devices/media_players.yaml
+camera: !include devices/cameras.yaml
+light: !include devices/light.yaml
+scene: !include scenes.yaml
+group: !include groups.yaml
+# Web Links #
+weblink: !include web_links.yaml

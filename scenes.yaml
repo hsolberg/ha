@@ -1,0 +1,299 @@
+## Kitchen normal lights on
+  - name: Kitchen normal
+    entities:
+        light.hue_color_spot_1:
+            state: on
+            transition: 2
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_2:
+            state: on
+            transition: 2
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_3:
+            state: on
+            transition: 2
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+
+## Kitchen lights dim
+  - name: Kitchen dim
+    entities:
+        light.hue_color_spot_1:
+            state: on
+            transition: 2
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_2:
+            state: on
+            transition: 2
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_3:
+            state: on
+            transition: 2
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+
+## Kitchen lights off
+  - name: Kitchen off
+    entities:
+        light.hue_color_spot_1:
+            state: off
+        light.hue_color_spot_2:
+            state: off
+        light.hue_color_spot_3:
+            state: off
+
+## Hallway normal lights on
+  - name: Hallway normal
+    entities:
+        light.hue_color_spot_4:
+            state: on
+            transition: 2
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_5:
+            state: on
+            transition: 2
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_6:
+            state: on
+            transition: 2
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+
+## Hallway lights dim
+  - name: Hallway dim
+    entities:
+        light.hue_color_spot_4:
+            state: on
+            transition: 2
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_5:
+            state: on
+            transition: 2
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_6:
+            state: on
+            transition: 2
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+
+## Hallway lights off
+  - name: Hallway off
+    entities:
+        light.hue_color_spot_4:
+            state: off
+        light.hue_color_spot_5:
+            state: off
+        light.hue_color_spot_6:
+            state: off
+
+## All lights on
+  - name: All on
+    entities:
+        light.hue_color_spot_1:
+            state: on
+            transition: 4
+        light.hue_color_spot_2:
+            state: on
+            transition: 4
+        light.hue_color_spot_3:
+            state: on
+            transition: 4
+        light.hue_color_spot_4:
+            state: on
+            transition: 4
+        light.hue_color_spot_5:
+            state: on
+            transition: 4
+        light.hue_color_spot_6:
+            state: on
+            transition: 4
+
+## All lights off
+  - name: All off
+    entities:
+        light.hue_color_spot_1:
+            state: off
+            transition: 2
+        light.hue_color_spot_2:
+            state: off
+            transition: 2
+        light.hue_color_spot_3:
+            state: off
+            transition: 2
+        light.hue_color_spot_4:
+            state: off
+            transition: 2
+        light.hue_color_spot_5:
+            state: off
+            transition: 2
+        light.hue_color_spot_6:
+            state: off
+            transition: 2
+
+## Bedroom normal lights on
+  - name: Bedroom normal
+    entities:
+        light.nattbordslampe:
+            state: on
+            transition: 2
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+
+## Bedroom lights dim
+  - name: Bedroom dim
+    entities:
+        light.nattbordslampe:
+            state: on
+            transition: 2
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+
+## Bedroom lights off
+  - name: Bedroom off
+    entities:
+        light.nattbordslampe:
+            state: off
+
+## Kodi player paused
+  - name: Xbian paused
+    entities:
+        light.hue_color_spot_1:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_2:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_3:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_4:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_5:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_6:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+
+## Kodi player playing
+  - name: Xbian playing
+    entities:
+        light.hue_color_spot_1:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_2:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_3:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_4:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_5:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_6:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+
+## Stopped playing game on steam
+  - name: Steam paused
+    entities:
+        light.hue_color_spot_1:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_2:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_3:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_4:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_5:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+        light.hue_color_spot_6:
+            state: on
+            transition: 6
+            brightness: 215
+            xy_color: [ 0.4448, 0.4066 ]
+
+## Started playing game on steam
+  - name: Steam playing
+    entities:
+        light.hue_color_spot_1:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_2:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_3:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_4:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_5:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]
+        light.hue_color_spot_6:
+            state: on
+            transition: 9
+            brightness: 145
+            xy_color: [ 0.5529, 0.4107 ]

@@ -1,0 +1,53 @@
+### Kodi-state automation - Media paused/stopped!
+  - alias: "Media player paused/stopped"
+    trigger:
+      - platform: state
+        entity_id: media_player.xbian
+        from: 'playing'
+    condition:
+      - platform: time
+        after: "08:00:00"
+        before: "23:59:59"
+    action:
+        service: scene.turn_on
+        entity_id: scene.xbian_paused
+
+### Kodi-state automation - Media playing!
+  - alias: "Media player playing"
+    trigger:
+      - platform: state
+        entity_id: media_player.xbian
+        to: 'playing'
+    condition:
+      - platform: time
+        after: "08:00:00"
+        before: "23:59:59"
+    action:
+        service: scene.turn_on
+        entity_id: scene.xbian_playing
+
+### Steam-state automation - Stopped playing!
+  - alias: "Gaming - stopped"
+    trigger:
+      - platform: template
+        value_template: "{% if is_state_attr('sensor.steam_XXXXXXXXXXXXXXXXX','Game': 'None') %}true{% endif %}"
+    condition:
+      - platform: time
+        after: "08:00:00"
+        before: "23:59:59"
+    action:
+        service: scene.turn_on
+        entity_id: scene.steam_paused
+
+### Steam-state automation - Gaming!
+  - alias: "Gaming - playing"
+    trigger:
+      - platform: template
+        value_template: "{% if is_state_attr('sensor.steam_XXXXXXXXXXXXXXXXX','Game': 'None') %}false{% endif %}"
+    condition:
+      - platform: time
+        after: "08:00:00"
+        before: "23:59:59"
+    action:
+        service: scene.turn_on
+        entity_id: scene.steam_playing
