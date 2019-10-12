@@ -2,6 +2,8 @@
 
 This is the redacted version of my HomeAssistant setup
 
+# NB! This is very outdated. Template-automations might not work anymore!
+
 ## Todo-list
 - [ ] Add Hue Motion Sensor to config.
 - [ ] Make detailed guide for how to use State attributes for Steam using templates.
